@@ -1,9 +1,5 @@
 name: Deployment
-on:
-  push:
-    branches:
-      - main
-      - dev
+on: workflow_dispatch
 env:
   MONGODB_NAME: ${{ secrets.MONGODB_NAME }}
   PORT: 3000
